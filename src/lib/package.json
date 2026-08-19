@@ -1,5 +1,5 @@
 {
-  "name": "next-js-ai-nt-2",
+  "name": "nextjs-ai-nt-2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@google/genai": "^2.17.1",
     "@hookform/resolvers": "^5.9.1",
     "@prisma/adapter-mariadb": "^7.9.1",
     "@prisma/client": "^7.9.1",
