@@ -29,10 +29,10 @@ jobs:
       - name: Run opencode review
         uses: anomalyco/opencode/github@latest
         env:
-          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          model: ollama-cloud/gemma4:31b
+          model: deepseek/deepseek-v4-flash
           use_github_token: true
           prompt: |
             Review this pull request.
