@@ -27,6 +27,7 @@ RUN npx prisma generate
 # Build Next.js application
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV DATABASE_URL="mysql://root:password@localhost:3306/ecommerce"
 
 RUN npm run build
 
