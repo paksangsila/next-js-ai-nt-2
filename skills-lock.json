@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "deploy-docker-production": {
+      "source": "codingthailand/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/deploy-docker-production/SKILL.md",
+      "computedHash": "be5848037d25a3b7260b130be122dc4ac282c035f13e60c6c140ce86637d5301"
+    },
+    "git-commit-guide": {
+      "source": "codingthailand/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/git-commit-guide/SKILL.md",
+      "computedHash": "88f0ed32096098023f647be68d8656b2d53c44746694ba0c4cc6e92aa842a425"
+    },
+    "project-onboarding": {
+      "source": "codingthailand/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/project-onboarding/SKILL.md",
+      "computedHash": "8f2c3f33bf5d60d29649492d9eb3f346cb1b1a8f82836d5fc903e87e47aea14c"
+    }
+  }
+}

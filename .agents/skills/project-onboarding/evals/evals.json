@@ -1,0 +1,30 @@
+{
+  "skill_name": "project-onboarding",
+  "evals": [
+    {
+      "id": "setup-thai",
+      "prompt": "โปรเจกต์นี้ setup และ run local ยังไง ขอแบบตารางสำหรับ developer ใหม่",
+      "expected_output": "ตอบเป็นภาษาไทยแบบตาราง มี npm install, cp .env.example .env.development, npx prisma generate, npm run lint, npm run dev และข้อควรระวัง",
+      "files": ["evals/files/sample-project"],
+      "assertions": [
+        "The answer is primarily in Thai",
+        "The setup steps are presented as a table",
+        "The answer includes npm run dev",
+        "The answer includes npx prisma generate",
+        "The answer does not suggest npm run test or npm run typecheck unless they exist"
+      ]
+    },
+    {
+      "id": "docker-gotcha",
+      "prompt": "Dockerfile ของโปรเจกต์นี้พร้อม build production ไหม",
+      "expected_output": "ต้องเตือนว่า Dockerfile ใช้ .next/standalone แต่ next.config.ts ไม่มี output: \"standalone\"",
+      "files": ["evals/files/sample-project"],
+      "assertions": [
+        "The answer checks both Dockerfile and next.config.ts",
+        "The answer mentions .next/standalone",
+        "The answer mentions output: \"standalone\"",
+        "The answer does not claim the Docker setup is production-ready"
+      ]
+    }
+  ]
+}

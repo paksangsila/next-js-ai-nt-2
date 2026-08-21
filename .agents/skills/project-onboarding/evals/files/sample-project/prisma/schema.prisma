@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model product {
+  id      Int     @id @default(autoincrement())
+  name    String
+  price   Decimal
+  picture String
+}
