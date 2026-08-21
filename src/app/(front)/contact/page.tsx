@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "ที่อยู่",
-    value: "123 ถนนตัวอย่าง แขวงบางรัก เขตบางรัก กรุงเทพมหานคร 10500",
+    value: "Address ppp yyyy 111",
   },
   {
     icon: Phone,
